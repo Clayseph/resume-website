@@ -1,0 +1,10 @@
+.about-page {
+    background-color: lightblue;
+    height: 100%;
+    width: 100%;  
+}
+.experience-list{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}

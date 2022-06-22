@@ -1,0 +1,12 @@
+.home-page {
+    background-color: lightblue;
+    height: 100em;
+    width: 100%;
+    width: 100em;
+}
+.intro-box {
+    border-radius: 25px;
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+}
