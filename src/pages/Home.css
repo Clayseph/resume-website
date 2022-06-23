@@ -2,9 +2,8 @@
     background-color: lightblue;
     height: 100em;
     width: 100%;
-    width: 100em;
 }
-.intro-box {
+.card {
     border-radius: 25px;
     background-color: white;
     margin: 1em;
