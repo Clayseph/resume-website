@@ -4,12 +4,10 @@ import { experienceList } from '../resources/experience';
 export default function About(){
 
     const move =  useSpring({
-        from: { marginTop:-200},
+        from: { marginTop: -200},
         marginTop: 100,
         config:{ duration: 1000 }
     });
-
-
 
     let trail = useTrail(experienceList.length, {
         from: { opacity:0},
@@ -30,8 +28,9 @@ export default function About(){
                 { trail.map(({...rest}, index)=>(
                     <animated.div className="card" style={{ ...rest }}>
                         <h2>{experienceList[index].company}</h2> 
-                        <p>{experienceList[index].experience}</p>
-                        </animated.div>
+                        <i>{experienceList[index].title}</i>
+                        <div className="experience-text">{experienceList[index].experience}</div>
+                    </animated.div>
                 ))}
                
         </div>
