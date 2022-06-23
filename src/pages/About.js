@@ -11,28 +11,31 @@ export default function About(){
 
     let trail = useTrail(experienceList.length, {
         from: { opacity:0},
-        delay: 1000,
+        // delay: 1000,
         opacity: 1,
-        config:{ duration: 1500}
+        config:{ duration: 1000}
     });
 
     return(
         <div  className="about-page">
 
-                <animated.div style={move} >
+                {/* <animated.div style={move} > */}
                     <div>
                         <h1>Professional Experience</h1>
                     </div>
-                </animated.div>
-
+                {/* </animated.div> */}
+                <div className="card-holder">
                 { trail.map(({...rest}, index)=>(
                     <animated.div className="card" style={{ ...rest }}>
-                        <h2>{experienceList[index].company}</h2> 
-                        <i>{experienceList[index].title}</i>
+                        <div className="details">
+                            <i className="title">{experienceList[index].title}</i>
+                            <i className="title">{experienceList[index].dates}</i>
+                        </div>
+                        <h2 className="company">{experienceList[index].company}</h2> 
                         <div className="experience-text">{experienceList[index].experience}</div>
                     </animated.div>
                 ))}
-               
+               </div>
         </div>
     );
 }
