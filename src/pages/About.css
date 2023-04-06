@@ -3,20 +3,14 @@
     height: 100em;
     width: 100%;
 }
+.App {
+    background-color: lightblue;
+    height: 100em;
+    width: 100%;
 
+}
 .company {
     text-align: center;
-}
-
-.details {
-    display: flex;
-    justify-content: space-between;
-}
-
-.experience-list{
-    display: flex;
-    justify-content: center;
-    text-align: left;
 }
 
 .card {
@@ -35,8 +29,33 @@
     align-items: center;
 }
 
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-list{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
 .experience-text{
     padding:1em;
+}
+
+.footer{
+
+}
+
+.icon {
+    width:4em;
+    height:4em;
+}
+
+.page{
+    display:flex;
+    flex-direction: column;
 }
 
 .title {
